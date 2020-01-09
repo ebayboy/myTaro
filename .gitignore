@@ -1719,3 +1719,4 @@ node_modules/taro-ui/src/components/calendar/interface.ts
 node_modules/taro-ui/src/components/calendar/types.d.ts
 node_modules/taro-ui/src/components/calendar/body/interface.ts
 node_modules/taro-ui/src/components/calendar/controller/interface.ts
+node_modules
