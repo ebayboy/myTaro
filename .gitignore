@@ -1732,3 +1732,12 @@ myTaro/dist/component/pageView.wxss
 myTaro/dist/pages/index/index.js
 myTaro/dist/pages/index/index.json
 myTaro/dist/pages/index/index.wxml
+myTaro/dist/app.json
+myTaro/dist/app.wxss
+myTaro/dist/project.config.json
+myTaro/dist/runtime.js
+myTaro/dist/vendors.js
+myTaro/dist/component/scrollViewTest.js
+myTaro/dist/component/scrollViewTest.json
+myTaro/dist/component/scrollViewTest.wxml
+myTaro/dist/pages/index/index.wxss
