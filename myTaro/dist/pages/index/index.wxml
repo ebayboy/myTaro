@@ -1,7 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="index"><text>Hello myTaro 333!</text>
-        <constellation></constellation>
-        <page-view></page-view>
-        <scroll-view-test></scroll-view-test>
-    </view>
-</block>
