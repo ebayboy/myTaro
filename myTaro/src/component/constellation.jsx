@@ -3,7 +3,7 @@ import { View, Image } from '@tarojs/components'
 
 import './constellation.scss'
 
-export class Constellation extends Component {
+export default class Constellation extends Component {
     render() {
         return (
             <View >
