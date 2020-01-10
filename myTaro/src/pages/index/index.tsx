@@ -5,6 +5,7 @@ import './index.scss'
 /* import PageView from '../../component/pageView'  */
 import  Constellation from '../../component/constellation'
 import  PageView from '../../component/pageView'
+import ScrollViewTest from '../../component/scrollViewTest'
 
 export default class Index extends Component {
 
@@ -35,6 +36,7 @@ export default class Index extends Component {
         <Text>Hello myTaro 333!</Text>
         <Constellation></Constellation>
         <PageView></PageView>
+        <ScrollViewTest></ScrollViewTest>
       </View>
     )
   }

@@ -55,7 +55,7 @@ var Index = function (_BaseComponent) {
     _this.config = {
       navigationBarTitleText: '首页'
     };
-    _this.customComponents = ["Constellation", "PageView"];
+    _this.customComponents = ["Constellation", "PageView", "ScrollViewTest"];
     return _this;
   }
 
