@@ -2,6 +2,10 @@ import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
 
+/* import PageView from '../../component/pageView'  */
+import  Constellation from '../../component/constellation'
+import  PageView from '../../component/pageView'
+
 export default class Index extends Component {
 
   /**
@@ -28,7 +32,9 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>Hello myTaro Test!</Text>
+        <Text>Hello myTaro 333!</Text>
+        <Constellation></Constellation>
+        <PageView></PageView>
       </View>
     )
   }

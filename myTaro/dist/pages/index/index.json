@@ -1,1 +1,1 @@
-{"usingComponents":{},"navigationBarTitleText":"首页"}
+{"component":true,"usingComponents":{"constellation":"../../component/constellation","page-view":"../../component/pageView"},"navigationBarTitleText":"首页"}

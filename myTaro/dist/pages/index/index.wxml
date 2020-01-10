@@ -1,4 +1,6 @@
 <block wx:if="{{$taroCompReady}}">
-    <view class="index"><text>Hello myTaro Test!</text>
+    <view class="index"><text>Hello myTaro 333!</text>
+        <constellation></constellation>
+        <page-view></page-view>
     </view>
 </block>
