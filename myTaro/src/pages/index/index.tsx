@@ -6,6 +6,7 @@ import './index.scss'
 import  Constellation from '../../component/constellation'
 import  PageView from '../../component/pageView'
 import ScrollViewTest from '../../component/scrollViewTest'
+import SwiperTest from '../../component/swiperTest'
 
 export default class Index extends Component {
 
@@ -37,6 +38,7 @@ export default class Index extends Component {
         <Constellation></Constellation>
         <PageView></PageView>
         <ScrollViewTest></ScrollViewTest>
+        <SwiperTest></SwiperTest>
       </View>
     )
   }
