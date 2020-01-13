@@ -8,10 +8,11 @@ import Constellation from "../../component/viewContainer/constellation";
 import PageView from "../../component/viewContainer/pageView";
 import ScrollViewTest from "../../component/viewContainer/scrollViewTest";
 import SwiperTest from "../../component/viewContainer/swiperTest";
-import MovableviewTest from "../../component/viewContainer/movableviewTest"
+import MovableviewTest from "../../component/viewContainer/movableviewTest";
 import CoverViewTest from "../../component/viewContainer/CoverViewTest";
-import IconTest from "../../component/base/iconTest"
+import IconTest from "../../component/base/iconTest";
 import TextTest from "../../component/base/textTest";
+import ProgressTest from "../../component/base/progressTest";
 
 export default class Index extends Component {
   /**
@@ -37,6 +38,11 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
+        <Text>Base</Text>
+        <IconTest></IconTest>
+        <TextTest></TextTest>
+        <ProgressTest></ProgressTest>
+
         <Text>viewContainer</Text>
         <Constellation></Constellation>
         <PageView></PageView>
@@ -44,11 +50,6 @@ export default class Index extends Component {
         <SwiperTest></SwiperTest>
         <MovableviewTest></MovableviewTest>
         <CoverViewTest></CoverViewTest>
-
-        <Text>Base</Text>
-        <IconTest></IconTest>
-        <TextTest></TextTest>
-
       </View>
     );
   }
