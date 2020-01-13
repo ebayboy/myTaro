@@ -59,7 +59,6 @@ export default class CheckboxTest extends Component {
                 <View className='page-section'>
                     <Text>推荐展示样式</Text>
                     {this.state.list.map((item, i) => {
-                        console.log(i)
                         return (
                             <Label className='checkbox-list__label' for={i} key={i}>
                                 <Checkbox className='checkbox-list__checkbox'
