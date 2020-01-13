@@ -14,7 +14,7 @@ import IconTest from "../../component/base/iconTest";
 import TextTest from "../../component/base/textTest";
 import ProgressTest from "../../component/base/progressTest";
 import RichTextTest from "../../component/base/richTextTest";
-import ButtonTest from "../../component/base/buttonTest";
+import ButtonTest from "../../component/form/buttonTest";
 
 export default class Index extends Component {
   /**
@@ -40,14 +40,16 @@ export default class Index extends Component {
   render() {
     return (
       <View className='index'>
-        <Text>Base</Text>
+        <Text>=====baseContainer</Text>
         <IconTest></IconTest>
         <TextTest></TextTest>
         <ProgressTest></ProgressTest>
         <RichTextTest></RichTextTest>
+
+        <Text>=====formContainer</Text>
         <ButtonTest></ButtonTest>
 
-        <Text>viewContainer</Text>
+        <Text>=====viewContainer</Text>
         <Constellation></Constellation>
         <PageView></PageView>
         <ScrollViewTest></ScrollViewTest>
