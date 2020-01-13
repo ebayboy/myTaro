@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Taro, { Component, Config } from "@tarojs/taro";
-import { View, Text, Swiper, SwiperItem } from "@tarojs/components";
+import { View, Swiper, SwiperItem, ScrollView } from "@tarojs/components";
 import "./index.scss";
 
 /* import PageView from '../../component/viewContainer/pageView'  */
@@ -38,7 +38,28 @@ export default class Index extends Component {
 
   componentDidHide() {}
 
+  onScrollToUpper() {}
+
+  // or 使用箭头函数
+  // onScrollToUpper = () => {}
+
+  onScroll(e) {
+    console.log(e.detail);
+  }
+
   render() {
+
+    /* Swiper最高150， 当超过这个高度使用scrollview进行滚动，以显示全部内容 */
+    const scrollStyle = {
+      height: "150px"
+    };
+    const scrollTop = 0;
+    const Threshold = 20;
+    const vStyleA = {
+      height: "150px",
+      "background-color": "rgb(26, 173, 25)"
+    };
+
     return (
       <Swiper
         className='index'
@@ -71,9 +92,21 @@ export default class Index extends Component {
         </SwiperItem>
 
         <SwiperItem className='form'>
-          <View>
-            <ButtonTest></ButtonTest>
-          </View>
+          <ScrollView
+            className='scrollview'
+            scrollY
+            scrollWithAnimation
+            scrollTop={scrollTop}
+            style={scrollStyle}
+            lowerThreshold={Threshold}
+            upperThreshold={Threshold}
+            onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
+            onScroll={this.onScroll}
+          >
+            <View style={vStyleA}>
+              <ButtonTest></ButtonTest>
+            </View>
+          </ScrollView>
         </SwiperItem>
         <SwiperItem>
           <View>
@@ -87,9 +120,9 @@ export default class Index extends Component {
           </View>
         </SwiperItem>
         <SwiperItem>
-            <View>
-              <PageView></PageView>
-            </View>
+          <View>
+            <PageView></PageView>
+          </View>
         </SwiperItem>
         <SwiperItem>
           <View>
