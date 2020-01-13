@@ -14,6 +14,7 @@ import IconTest from "../../component/base/iconTest";
 import TextTest from "../../component/base/textTest";
 import ProgressTest from "../../component/base/progressTest";
 import RichTextTest from "../../component/base/richTextTest";
+import ButtonTest from "../../component/base/buttonTest";
 
 export default class Index extends Component {
   /**
@@ -44,6 +45,7 @@ export default class Index extends Component {
         <TextTest></TextTest>
         <ProgressTest></ProgressTest>
         <RichTextTest></RichTextTest>
+        <ButtonTest></ButtonTest>
 
         <Text>viewContainer</Text>
         <Constellation></Constellation>
