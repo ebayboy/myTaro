@@ -2,7 +2,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Icon } from '@tarojs/components'
 
-export default class iconTest extends Component {
+export default class IconTest extends Component {
   constructor() {
     super(...arguments)
   }

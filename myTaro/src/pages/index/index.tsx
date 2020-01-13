@@ -11,6 +11,7 @@ import SwiperTest from "../../component/viewContainer/swiperTest";
 import MovableviewTest from "../../component/viewContainer/movableviewTest"
 import CoverViewTest from "../../component/viewContainer/CoverViewTest";
 import IconTest from "../../component/base/iconTest"
+import TextTest from "../../component/base/textTest";
 
 export default class Index extends Component {
   /**
@@ -46,6 +47,7 @@ export default class Index extends Component {
 
         <Text>Base</Text>
         <IconTest></IconTest>
+        <TextTest></TextTest>
 
       </View>
     );
