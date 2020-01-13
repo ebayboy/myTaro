@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { ScrollView, View } from '@tarojs/components'
+import { Text, ScrollView, View } from '@tarojs/components'
 
 export default class ScrollViewTest extends Component {
     constructor() {
@@ -35,21 +35,24 @@ export default class ScrollViewTest extends Component {
             color: '#333'
         }
         return (
-            <ScrollView
-                className='scrollview'
-                scrollY
-                scrollWithAnimation
-                scrollTop={scrollTop}
-                style={scrollStyle}
-                lowerThreshold={Threshold}
-                upperThreshold={Threshold}
-                onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
-                onScroll={this.onScroll}
-            >
-                <View style={vStyleA}>A</View>
-                <View style={vStyleB}>B</View>
-                <View style={vStyleC}>C</View>
-            </ScrollView>
+            <View>
+                <Text>ScrollViewTest</Text>
+                <ScrollView
+                  className='scrollview'
+                  scrollY
+                  scrollWithAnimation
+                  scrollTop={scrollTop}
+                  style={scrollStyle}
+                  lowerThreshold={Threshold}
+                  upperThreshold={Threshold}
+                  onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
+                  onScroll={this.onScroll}
+                >
+                    <View style={vStyleA}>A</View>
+                    <View style={vStyleB}>B</View>
+                    <View style={vStyleC}>C</View>
+                </ScrollView>
+            </View>
         )
     }
 }

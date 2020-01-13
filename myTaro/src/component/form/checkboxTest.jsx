@@ -50,6 +50,7 @@ export default class CheckboxTest extends Component {
     render() {
         return (
             <View className='page-body'>
+                <Text>CheckboxTest</Text>
                 <View className='page-section'>
                     <Text>默认样式</Text>
                     <Checkbox value='选中' checked>选中</Checkbox>

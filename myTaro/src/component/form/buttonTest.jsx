@@ -50,6 +50,7 @@ export default class ButtonTest extends Component {
     render() {
         return (
             <View className='container'>
+                <Text>buttonTest</Text>
                 {this.state.btn.map(item => {
                     return (
                         <Button

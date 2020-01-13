@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Taro, { Component, Config } from "@tarojs/taro";
-import { View, Text } from "@tarojs/components";
+import { View, Text, Swiper, SwiperItem } from "@tarojs/components";
 import "./index.scss";
 
 /* import PageView from '../../component/viewContainer/pageView'  */
@@ -40,25 +40,78 @@ export default class Index extends Component {
 
   render() {
     return (
-      <View className='index'>
-        <Text>=====baseContainer</Text>
-        <IconTest></IconTest>
-        <TextTest></TextTest>
-        <ProgressTest></ProgressTest>
-        <RichTextTest></RichTextTest>
+      <Swiper
+        className='index'
+        indicatorColor='#999'
+        indicatorActiveColor='#333'
+        vertical
+        circular
+        indicatorDots
+        autoplay
+      >
+        <SwiperItem>
+          <View>
+            <IconTest></IconTest>
+          </View>
+        </SwiperItem>
+        <SwiperItem>
+          <View>
+            <TextTest></TextTest>
+          </View>
+        </SwiperItem>
+        <SwiperItem>
+          <View>
+            <ProgressTest></ProgressTest>
+          </View>
+        </SwiperItem>
+        <SwiperItem>
+          <View>
+            <RichTextTest></RichTextTest>
+          </View>
+        </SwiperItem>
 
-        <Text>=====formContainer</Text>
-        <ButtonTest></ButtonTest>
-        <CheckboxTest></CheckboxTest>
+        <SwiperItem className='form'>
+          <View>
+            <ButtonTest></ButtonTest>
+          </View>
+        </SwiperItem>
+        <SwiperItem>
+          <View>
+            <CheckboxTest></CheckboxTest>
+          </View>
+        </SwiperItem>
 
-        <Text>=====viewContainer</Text>
-        <Constellation></Constellation>
-        <PageView></PageView>
-        <ScrollViewTest></ScrollViewTest>
-        <SwiperTest></SwiperTest>
-        <MovableviewTest></MovableviewTest>
-        <CoverViewTest></CoverViewTest>
-      </View>
+        <SwiperItem className='viewContainer'>
+          <View>
+            <Constellation></Constellation>
+          </View>
+        </SwiperItem>
+        <SwiperItem>
+            <View>
+              <PageView></PageView>
+            </View>
+        </SwiperItem>
+        <SwiperItem>
+          <View>
+            <ScrollViewTest></ScrollViewTest>
+          </View>
+        </SwiperItem>
+        <SwiperItem>
+          <View>
+            <SwiperTest></SwiperTest>
+          </View>
+        </SwiperItem>
+        <SwiperItem>
+          <View>
+            <MovableviewTest></MovableviewTest>
+          </View>
+        </SwiperItem>
+        <SwiperItem>
+          <View>
+            <CoverViewTest></CoverViewTest>
+          </View>
+        </SwiperItem>
+      </Swiper>
     );
   }
 }

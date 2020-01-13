@@ -1,7 +1,7 @@
 
 
 import Taro, { Component } from '@tarojs/taro'
-import { View, Progress } from '@tarojs/components'
+import { Text, View, Progress } from '@tarojs/components'
 
 export default class ProgressTest extends Component {
     constructor() {
@@ -11,6 +11,7 @@ export default class ProgressTest extends Component {
     render() {
         return (
             <View className='components-page'>
+                <Text>ProgressTest</Text>
                 <Progress percent={20} showInfo strokeWidth={2} />
                 <Progress percent={40} strokeWidth={2} active />
                 <Progress percent={60} strokeWidth={2} active />

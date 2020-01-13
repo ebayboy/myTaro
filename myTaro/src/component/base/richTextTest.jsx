@@ -1,7 +1,7 @@
 
 import Taro, { Component } from '@tarojs/taro'
 // 引入 RichText 组件
-import { RichText } from '@tarojs/components'
+import { Text, View, RichText } from '@tarojs/components'
 
 export default class RichTextTest extends Component {
     state = {
@@ -19,7 +19,10 @@ export default class RichTextTest extends Component {
     }
     render() {
         return (
-            <RichText nodes={this.state.nodes} />
+            <View>
+                <Text>RichTextTest</Text>
+                <RichText nodes={this.state.nodes} />
+            </View>
         )
     }
 }

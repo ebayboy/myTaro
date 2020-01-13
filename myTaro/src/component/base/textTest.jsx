@@ -41,6 +41,7 @@ export default class TextTest extends Component {
   render() {
     return (
       <View className='container'>
+        <Text>Texttest</Text>
         {
           this.state.contents.map((item, index) => (
             <Text key={index}>{item.text}</Text>

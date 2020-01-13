@@ -1,6 +1,6 @@
 
 import Taro, { Component } from '@tarojs/taro'
-import { View, Icon } from '@tarojs/components'
+import { Text, View, Icon } from '@tarojs/components'
 
 export default class IconTest extends Component {
   constructor() {
@@ -9,7 +9,8 @@ export default class IconTest extends Component {
 
   render() {
     return (
-      <View className='components-page'>
+      <View className='iconText'>
+        <Text>Icontest</Text>
         <Icon size='60' type='success' />
         <Icon size='60' type='info' />
         <Icon size='60' type='warn' color='#ccc' />
