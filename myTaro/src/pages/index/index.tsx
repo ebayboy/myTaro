@@ -10,6 +10,7 @@ import ScrollViewTest from "../../component/viewContainer/scrollViewTest";
 import SwiperTest from "../../component/viewContainer/swiperTest";
 import MovableviewTest from "../../component/viewContainer/movableviewTest"
 import CoverViewTest from "../../component/viewContainer/CoverViewTest";
+import IconTest from "../../component/base/iconTest"
 
 export default class Index extends Component {
   /**
@@ -34,7 +35,7 @@ export default class Index extends Component {
 
   render() {
     return (
-      <View className='viewContainer'>
+      <View className='index'>
         <Text>viewContainer</Text>
         <Constellation></Constellation>
         <PageView></PageView>
@@ -42,6 +43,10 @@ export default class Index extends Component {
         <SwiperTest></SwiperTest>
         <MovableviewTest></MovableviewTest>
         <CoverViewTest></CoverViewTest>
+
+        <Text>Base</Text>
+        <IconTest></IconTest>
+
       </View>
     );
   }
