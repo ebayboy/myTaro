@@ -1,3 +1,4 @@
+/* eslint-disable jsx-quotes */
 /* eslint-disable no-unused-vars */
 import Taro, { Component, Config } from "@tarojs/taro";
 import { View, Swiper, SwiperItem, ScrollView } from "@tarojs/components";
@@ -16,6 +17,7 @@ import ProgressTest from "../../component/base/progressTest";
 import RichTextTest from "../../component/base/richTextTest";
 import ButtonTest from "../../component/form/buttonTest";
 import CheckboxTest from "../../component/form/checkBoxTest";
+import FormTest from "../../component/form/formTest";
 
 export default class Index extends Component {
   /**
@@ -48,7 +50,6 @@ export default class Index extends Component {
   }
 
   render() {
-
     /* Swiper最高150， 当超过这个高度使用scrollview进行滚动，以显示全部内容 */
     const scrollStyle = {
       height: "150px"
@@ -62,14 +63,43 @@ export default class Index extends Component {
 
     return (
       <Swiper
-        className='index'
-        indicatorColor='#999'
-        indicatorActiveColor='#333'
+        className="index"
+        indicatorColor="#999"
+        indicatorActiveColor="#333"
         vertical
         circular
         indicatorDots
         autoplay
       >
+        <SwiperItem>
+          <View>
+            <FormTest></FormTest>
+          </View>
+        </SwiperItem>
+
+        <SwiperItem className="form">
+          <ScrollView
+            className="scrollview"
+            scrollY
+            scrollWithAnimation
+            scrollTop={scrollTop}
+            style={scrollStyle}
+            lowerThreshold={Threshold}
+            upperThreshold={Threshold}
+            onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
+            onScroll={this.onScroll}
+          >
+            <View style={vStyleA}>
+              <ButtonTest></ButtonTest>
+            </View>
+          </ScrollView>
+        </SwiperItem>
+
+        <SwiperItem>
+          <View>
+            <CheckboxTest></CheckboxTest>
+          </View>
+        </SwiperItem>
         <SwiperItem>
           <View>
             <IconTest></IconTest>
@@ -90,31 +120,7 @@ export default class Index extends Component {
             <RichTextTest></RichTextTest>
           </View>
         </SwiperItem>
-
-        <SwiperItem className='form'>
-          <ScrollView
-            className='scrollview'
-            scrollY
-            scrollWithAnimation
-            scrollTop={scrollTop}
-            style={scrollStyle}
-            lowerThreshold={Threshold}
-            upperThreshold={Threshold}
-            onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
-            onScroll={this.onScroll}
-          >
-            <View style={vStyleA}>
-              <ButtonTest></ButtonTest>
-            </View>
-          </ScrollView>
-        </SwiperItem>
-        <SwiperItem>
-          <View>
-            <CheckboxTest></CheckboxTest>
-          </View>
-        </SwiperItem>
-
-        <SwiperItem className='viewContainer'>
+        <SwiperItem className="viewContainer">
           <View>
             <Constellation></Constellation>
           </View>
