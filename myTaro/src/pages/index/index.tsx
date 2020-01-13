@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import Taro, { Component, Config } from "@tarojs/taro";
-import { View, Text } from "@tarojs/components";
+import { View, Text, MovableArea } from "@tarojs/components";
 import "./index.scss";
 
 /* import PageView from '../../component/pageView'  */
@@ -8,6 +8,7 @@ import Constellation from "../../component/constellation";
 import PageView from "../../component/pageView";
 import ScrollViewTest from "../../component/scrollViewTest";
 import SwiperTest from "../../component/swiperTest";
+import MovableviewTest from "../../component/movableviewTest"
 
 export default class Index extends Component {
   /**
@@ -38,6 +39,7 @@ export default class Index extends Component {
         <PageView></PageView>
         <ScrollViewTest></ScrollViewTest>
         <SwiperTest></SwiperTest>
+        <MovableviewTest></MovableviewTest>
       </View>
     );
   }
