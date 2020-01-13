@@ -18,6 +18,7 @@ import RichTextTest from "../../component/base/richTextTest";
 import ButtonTest from "../../component/form/buttonTest";
 import CheckboxTest from "../../component/form/checkBoxTest";
 import FormTest from "../../component/form/formTest";
+import InputTest from "../../component/form/inputTest";
 
 export default class Index extends Component {
   /**
@@ -57,7 +58,6 @@ export default class Index extends Component {
     const scrollTop = 0;
     const Threshold = 20;
     const vStyleA = {
-      height: "150px",
       "background-color": "rgb(26, 173, 25)"
     };
 
@@ -69,8 +69,24 @@ export default class Index extends Component {
         vertical
         circular
         indicatorDots
-        autoplay
       >
+        <SwiperItem>
+          <ScrollView
+            className="scrollview"
+            scrollY
+            scrollWithAnimation
+            scrollTop={scrollTop}
+            style={scrollStyle}
+            lowerThreshold={Threshold}
+            upperThreshold={Threshold}
+            onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
+            onScroll={this.onScroll}
+          >
+            <View style={vStyleA}>
+              <InputTest></InputTest>
+            </View>
+          </ScrollView>
+        </SwiperItem>
         <SwiperItem>
           <View>
             <FormTest></FormTest>
