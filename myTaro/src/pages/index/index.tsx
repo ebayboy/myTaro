@@ -3,13 +3,13 @@ import Taro, { Component, Config } from "@tarojs/taro";
 import { View, Text } from "@tarojs/components";
 import "./index.scss";
 
-/* import PageView from '../../component/pageView'  */
-import Constellation from "../../component/constellation";
-import PageView from "../../component/pageView";
-import ScrollViewTest from "../../component/scrollViewTest";
-import SwiperTest from "../../component/swiperTest";
-import MovableviewTest from "../../component/movableviewTest"
-import CoverViewTest from "../../component/CoverViewTest";
+/* import PageView from '../../component/viewContainer/pageView'  */
+import Constellation from "../../component/viewContainer/constellation";
+import PageView from "../../component/viewContainer/pageView";
+import ScrollViewTest from "../../component/viewContainer/scrollViewTest";
+import SwiperTest from "../../component/viewContainer/swiperTest";
+import MovableviewTest from "../../component/viewContainer/movableviewTest"
+import CoverViewTest from "../../component/viewContainer/CoverViewTest";
 
 export default class Index extends Component {
   /**
@@ -34,8 +34,8 @@ export default class Index extends Component {
 
   render() {
     return (
-      <View className='index'>
-        <Text>Hello myTaro 333!</Text>
+      <View className='viewContainer'>
+        <Text>viewContainer</Text>
         <Constellation></Constellation>
         <PageView></PageView>
         <ScrollViewTest></ScrollViewTest>
