@@ -15,6 +15,7 @@ import TextTest from "../../component/base/textTest";
 import ProgressTest from "../../component/base/progressTest";
 import RichTextTest from "../../component/base/richTextTest";
 import ButtonTest from "../../component/form/buttonTest";
+import CheckboxTest from "../../component/form/checkBoxTest";
 
 export default class Index extends Component {
   /**
@@ -48,6 +49,7 @@ export default class Index extends Component {
 
         <Text>=====formContainer</Text>
         <ButtonTest></ButtonTest>
+        <CheckboxTest></CheckboxTest>
 
         <Text>=====viewContainer</Text>
         <Constellation></Constellation>
