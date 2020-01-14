@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 
 import Taro, { Component } from '@tarojs/taro'
 import { Text, View, PickerView, PickerViewColumn } from '@tarojs/components'
