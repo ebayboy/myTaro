@@ -30,6 +30,10 @@ export default class Index extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
 
+  constructor() {
+    super(...arguments);
+  }
+
   componentWillMount() {}
 
   componentDidMount() {}
@@ -59,7 +63,9 @@ export default class Index extends Component {
     const scrollTop = 0;
     const Threshold = 20;
     const vStyleA = {
-      "background-color": "rgb(26, 173, 25)"
+      height: "150px",
+      "background-color": "rgb(241,241,241)",
+      color: "#333"
     };
 
     return (
