@@ -19,6 +19,7 @@ import ButtonTest from "../../component/form/buttonTest";
 import CheckboxTest from "../../component/form/checkBoxTest";
 import FormTest from "../../component/form/formTest";
 import InputTest from "../../component/form/inputTest";
+import LableTest from "../../component/form/lableTest";
 
 export default class Index extends Component {
   /**
@@ -70,6 +71,11 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+          <View>
+            <LableTest></LableTest>
+          </View>
+        </SwiperItem>
         <SwiperItem>
           <ScrollView
             className="scrollview"
