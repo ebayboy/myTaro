@@ -1,7 +1,13 @@
 /* eslint-disable jsx-quotes */
 /* eslint-disable no-unused-vars */
 import Taro, { Component, Config } from "@tarojs/taro";
-import { View, Swiper, SwiperItem, ScrollView } from "@tarojs/components";
+import {
+  View,
+  Swiper,
+  SwiperItem,
+  ScrollView,
+  Switch
+} from "@tarojs/components";
 import "./index.scss";
 
 /* import PageView from '../../component/viewContainer/pageView'  */
@@ -25,6 +31,7 @@ import PickerViewTest from "../../component/form/pickerViewTest";
 import RadioTest from "../../component/form/radioText";
 import SliderTest from "../../component/form/sliderTest";
 import SwitchTest from "../../component/form/switchTest";
+import TextAreaTest from "../../component/form/textAreaTest";
 
 export default class Index extends Component {
   /**
@@ -82,6 +89,24 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+          <ScrollView
+            className="scrollview"
+            scrollY
+            scrollWithAnimation
+            scrollTop={scrollTop}
+            style={scrollStyle}
+            lowerThreshold={Threshold}
+            upperThreshold={Threshold}
+            onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
+            onScroll={this.onScroll}
+          >
+            <View>
+              <TextAreaTest></TextAreaTest>
+            </View>
+          </ScrollView>
+        </SwiperItem>
+
         <SwiperItem>
           <SwitchTest></SwitchTest>
         </SwiperItem>
