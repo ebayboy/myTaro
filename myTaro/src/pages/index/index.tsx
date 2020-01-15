@@ -23,6 +23,7 @@ import LableTest from "../../component/form/lableTest";
 import PickerTest from "../../component/form/pikerTest";
 import PickerViewTest from "../../component/form/pickerViewTest";
 import RadioTest from "../../component/form/radioText";
+import SliderTest from "../../component/form/sliderTest";
 
 export default class Index extends Component {
   /**
@@ -81,7 +82,25 @@ export default class Index extends Component {
         indicatorDots
       >
         <SwiperItem>
-            <RadioTest></RadioTest>
+          <ScrollView
+            className="scrollview"
+            scrollY
+            scrollWithAnimation
+            scrollTop={scrollTop}
+            style={scrollStyle}
+            lowerThreshold={Threshold}
+            upperThreshold={Threshold}
+            onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
+            onScroll={this.onScroll}
+          >
+            <View>
+              <SliderTest></SliderTest>
+            </View>
+          </ScrollView>
+        </SwiperItem>
+
+        <SwiperItem>
+          <RadioTest></RadioTest>
         </SwiperItem>
 
         <SwiperItem>
