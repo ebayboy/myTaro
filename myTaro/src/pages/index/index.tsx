@@ -32,6 +32,7 @@ import RadioTest from "../../component/form/radioText";
 import SliderTest from "../../component/form/sliderTest";
 import SwitchTest from "../../component/form/switchTest";
 import TextAreaTest from "../../component/form/textAreaTest";
+import AudioTest from "../../component/media/audioTest";
 
 export default class Index extends Component {
   /**
@@ -89,6 +90,9 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+          <AudioTest></AudioTest>
+        </SwiperItem>
         <SwiperItem>
           <ScrollView
             className="scrollview"
