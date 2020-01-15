@@ -21,7 +21,8 @@ import FormTest from "../../component/form/formTest";
 import InputTest from "../../component/form/inputTest";
 import LableTest from "../../component/form/lableTest";
 import PickerTest from "../../component/form/pikerTest";
-import PickerViewTest from "../../component/form/pickerViewTest"
+import PickerViewTest from "../../component/form/pickerViewTest";
+import RadioTest from "../../component/form/radioText";
 
 export default class Index extends Component {
   /**
@@ -79,6 +80,10 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+            <RadioTest></RadioTest>
+        </SwiperItem>
+
         <SwiperItem>
           <ScrollView
             className="scrollview"
