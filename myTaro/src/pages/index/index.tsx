@@ -1,13 +1,7 @@
 /* eslint-disable jsx-quotes */
 /* eslint-disable no-unused-vars */
 import Taro, { Component, Config } from "@tarojs/taro";
-import {
-  View,
-  Swiper,
-  SwiperItem,
-  ScrollView,
-  Switch
-} from "@tarojs/components";
+import { View, Swiper, SwiperItem, ScrollView } from "@tarojs/components";
 import "./index.scss";
 
 /* import PageView from '../../component/viewContainer/pageView'  */
@@ -33,6 +27,7 @@ import SliderTest from "../../component/form/sliderTest";
 import SwitchTest from "../../component/form/switchTest";
 import TextAreaTest from "../../component/form/textAreaTest";
 import AudioTest from "../../component/media/audioTest";
+import ImageTest from "../../component/media/imageTest";
 
 export default class Index extends Component {
   /**
@@ -90,6 +85,9 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+          <ImageTest></ImageTest>
+        </SwiperItem>
         <SwiperItem>
           <AudioTest></AudioTest>
         </SwiperItem>
