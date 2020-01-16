@@ -1,7 +1,7 @@
 /* eslint-disable jsx-quotes */
 /* eslint-disable no-unused-vars */
 import Taro, { Component, Config } from "@tarojs/taro";
-import { View, Swiper, SwiperItem, ScrollView } from "@tarojs/components";
+import { View, Swiper, SwiperItem, ScrollView, OfficialAccount } from "@tarojs/components";
 import "./index.scss";
 
 /* import PageView from '../../component/viewContainer/pageView'  */
@@ -34,6 +34,8 @@ import NavigatorTest from "../../component/navigator/navigatorTest";
 import MapTest from "../../component/map/mapTest";
 import CanvasTest from "../../component/canvas/canvasTest";
 import AdTest from "../../component/open/adTest";
+import OfficialAccountTest from "../../component/open/officialAccountTest";
+import OpenDataTest from "../../component/open/openDataTest";
 
 export default class Index extends Component {
   /**
@@ -91,6 +93,12 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+          <OpenDataTest></OpenDataTest>
+        </SwiperItem>
+        <SwiperItem>
+          <OfficialAccountTest></OfficialAccountTest>
+        </SwiperItem>
         <SwiperItem>
           <AdTest></AdTest>
         </SwiperItem>
