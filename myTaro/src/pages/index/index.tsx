@@ -28,6 +28,7 @@ import SwitchTest from "../../component/form/switchTest";
 import TextAreaTest from "../../component/form/textAreaTest";
 import AudioTest from "../../component/media/audioTest";
 import ImageTest from "../../component/media/imageTest";
+import VideoTest from "../../component/media/videoTest";
 
 export default class Index extends Component {
   /**
@@ -85,6 +86,9 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+          <VideoTest></VideoTest>
+        </SwiperItem>
         <SwiperItem>
           <ImageTest></ImageTest>
         </SwiperItem>
