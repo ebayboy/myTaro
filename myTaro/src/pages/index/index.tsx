@@ -29,6 +29,7 @@ import TextAreaTest from "../../component/form/textAreaTest";
 import AudioTest from "../../component/media/audioTest";
 import ImageTest from "../../component/media/imageTest";
 import VideoTest from "../../component/media/videoTest";
+import CameroTest from "../../component/media/cameraTest";
 
 export default class Index extends Component {
   /**
@@ -86,6 +87,24 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+          <ScrollView
+            className="scrollview"
+            scrollY
+            scrollWithAnimation
+            scrollTop={scrollTop}
+            style={scrollStyle}
+            lowerThreshold={Threshold}
+            upperThreshold={Threshold}
+            onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
+            onScroll={this.onScroll}
+          >
+            <View>
+              <CameroTest></CameroTest>
+            </View>
+          </ScrollView>
+        </SwiperItem>
+
         <SwiperItem>
           <VideoTest></VideoTest>
         </SwiperItem>
