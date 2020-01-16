@@ -36,6 +36,7 @@ import CanvasTest from "../../component/canvas/canvasTest";
 import AdTest from "../../component/open/adTest";
 import OfficialAccountTest from "../../component/open/officialAccountTest";
 import OpenDataTest from "../../component/open/openDataTest";
+import WebViewTest from "../../component/open/webViewTest";
 
 export default class Index extends Component {
   /**
@@ -93,6 +94,9 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+          <WebViewTest></WebViewTest>
+        </SwiperItem>
         <SwiperItem>
           <OpenDataTest></OpenDataTest>
         </SwiperItem>
