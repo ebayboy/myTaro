@@ -33,6 +33,7 @@ import CameroTest from "../../component/media/cameraTest";
 import NavigatorTest from "../../component/navigator/navigatorTest";
 import MapTest from "../../component/map/mapTest";
 import CanvasTest from "../../component/canvas/canvasTest";
+import AdTest from "../../component/open/adTest";
 
 export default class Index extends Component {
   /**
@@ -90,6 +91,9 @@ export default class Index extends Component {
         circular
         indicatorDots
       >
+        <SwiperItem>
+          <AdTest></AdTest>
+        </SwiperItem>
         <SwiperItem>
           <ScrollView
             className="scrollview"
